@@ -1,7 +1,7 @@
 //1
 const number = [5, 7, 2]
 console.log(number)
-const spliceNumber = number.splice(1, 1, )
+number[1] = number[1] * 10
 console.log(number)
 
 //2
