@@ -5,9 +5,9 @@ number[1] = number[1] * 10
 console.log(number)
 
 //2
-const word = ['one', 'four', 'tree']
+let word = ['one', 'four', 'tree']
 console.log(word)
-word.push('two')
+word[3]='two'
 console.log(word)
 
 //3
@@ -35,8 +35,18 @@ for (let t = 0; t < arr3.length; t++) {
 
 //6
 const array = [34, 45, 4343, 54, 35, 78, 98, 9898, 7809, 8]
-const arrayBiggest = Math.max(...array)
-console.log(arrayBiggest)
+let biggestNumber = array[0];
+biggestNumber = array[1] > biggestNumber ? array[1] : biggestNumber;
+biggestNumber = array[2] > biggestNumber ? array[2] : biggestNumber;
+biggestNumber = array[3] > biggestNumber ? array[3] : biggestNumber;
+biggestNumber = array[4] > biggestNumber ? array[4] : biggestNumber;
+biggestNumber = array[5] > biggestNumber ? array[5] : biggestNumber;
+biggestNumber = array[6] > biggestNumber ? array[6] : biggestNumber;
+biggestNumber = array[7] > biggestNumber ? array[7] : biggestNumber;
+biggestNumber = array[8] > biggestNumber ? array[8] : biggestNumber;
+biggestNumber = array[9] > biggestNumber ? array[9] : biggestNumber;
+
+console.log(biggestNumber)
 
 //7
 const joker = [12, 45, 7, 89, 32, 56, 3, 98, 20, 67];
